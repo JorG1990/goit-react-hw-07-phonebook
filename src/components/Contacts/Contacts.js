@@ -8,7 +8,7 @@ export const Contacts = () => {
   const contacts = useSelector(selectFilteredContacts);
 
   const deleteContact = id => {
-    console.log(`El id eliminado fue el ${id}`);
+    console.log(`The deleted id was ${id}`);
     dispatch(deleteContactThunk(id));
   };
 

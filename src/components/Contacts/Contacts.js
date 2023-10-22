@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { deleteContactThunk } from "../../redux/contacts-thunk";
+import { deleteContactsThunk } from "../../redux/contacts-thunk";
 import { selectFilteredContacts } from "../../redux/selectors";
 import { Table } from "./Contacts.styled";
 
@@ -9,7 +9,7 @@ export const Contacts = () => {
 
   const deleteContact = id => {
     console.log(`The deleted id was ${id}`);
-    dispatch(deleteContactThunk(id));
+    dispatch(deleteContactsThunk(id));
   };
 
   return(

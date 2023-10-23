@@ -8,32 +8,32 @@ export const getContactsThunk = createAsyncThunk (
     try{
       const data = await getContacts();
       return data;
-    }catch (error) {
+    } catch (error) {
       return rejectWithValue(error.message);
     }
-  }
+    }
 );
 
 export const addContactsThunk = createAsyncThunk (
   'contacts/addContact',
-  async ( contact, { rejectWithValue }) => {
-    try {
-      const data = await addContacts (contact);
+  async (contact, { rejectWithValue }) => {
+    try{
+      const data = await addContacts(contact);
       return data;
-    }catch (error) {
+    } catch (error) {
       return rejectWithValue(error.message);
     }
-  }
+    }
 );
 
 export const deleteContactsThunk = createAsyncThunk (
   'contacts/deleteContact',
-  async ( id, { rejectWithValue }) => {
+  async (id, { rejectWithValue }) => {
     try{
-      const data = await deleteContacts (id);
+      const data = await deleteContacts(id);
       return data;
-    }catch (error) {
+    } catch (error) {
       return rejectWithValue(error.message);
     }
-  }
+    }
 );

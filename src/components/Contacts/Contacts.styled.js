@@ -11,7 +11,7 @@ export const Table = styled.table`
   & td {
     padding: 7px;
     text-align: left;
-    color: white;
+    color: black;
   }
 
   & td:first-child {
@@ -20,7 +20,7 @@ export const Table = styled.table`
 
   & button {
     padding: 8px 10px;
-    background-color: white;
+    background-color: #f0f0f0;
     border: 0px;
     border-radius: 6px;
     cursor: pointer;

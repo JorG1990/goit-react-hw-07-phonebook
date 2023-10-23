@@ -1,12 +1,11 @@
 
-import React from "react";
-import { useDispatch } from "react-redux";
-import { FormStyled } from "./Filter.styled";
-import { filterContacts } from "../../redux/filterSlice"
+import React from 'react';
+import { useDispatch } from 'react-redux/es/exports';
+import { filterContacts } from 'redux/filterSlice';
+import { FormStyled } from './Filter.styled';
 
 export const Filter = () => {
   const dispatch = useDispatch();
-
   const handleFilterChange = e => {
     dispatch(filterContacts(e.target.value));
   };
@@ -16,9 +15,9 @@ export const Filter = () => {
       <label>
         Find contacts by name
         <input
-        type="text"
-        name="name"
-        onChange={handleFilterChange}
+          type="text"
+          name="name"
+          onChange={handleFilterChange}
         ></input>
       </label>
     </FormStyled>

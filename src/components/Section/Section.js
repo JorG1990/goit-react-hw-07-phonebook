@@ -1,11 +1,10 @@
 
-import React from "react";
-import { Title } from "./Section.styled";
-import PropTypes from "prop-types";
-
+import React from 'react';
+import { Title } from './Section.styled';
+import PropTypes from 'prop-types';
 
 export const Section = ({ title, children }) => {
-  return(
+  return (
     <div>
       <Title>{title}</Title>
       {children}

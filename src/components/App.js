@@ -1,14 +1,14 @@
 
-import React from "react";
-import { Contacts } from "./Contacts/Contacts";
-import { Section } from "./Section/Section";
-import { Form } from "./Form/Form";
-import { Filter } from "./Filter/Filter";
+import React from 'react';
+import { Section } from './Section/Section';
+import { Form } from './Form/Form';
+import { Contacts } from './Contacts/Contacts';
+import { Filter } from './Filter/Filter';
 
 export const App = () => {
   return (
     <>
-      <Section title="phonebook">
+      <Section title="Phonebook">
         <Form />
       </Section>
       <Section title="Contacts">
